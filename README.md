@@ -22,13 +22,14 @@ Using Poetry (Recommended)
 poetry install
 Using pip
 pip install requests
+
 2. Running the Script
 Run the script with a query:
 python fetch_pubmed_papers.py "cancer research" -f results.csv
 Command-line Options
--f or --file → Specify output CSV file name.
--d or --debug → Enable debug mode for more information.
--h or --help → Show help menu.
+   1. -f or --file → Specify output CSV file name.
+   2. -d or --debug → Enable debug mode for more information.
+   3. -h or --help → Show help menu.
 Example with debug mode:
 python fetch_pubmed_papers.py "biotechnology innovation" -d
 
@@ -37,11 +38,11 @@ python fetch_pubmed_papers.py "biotechnology innovation" -d
 Python 3.8+ (Recommended)
 2. Libraries Used            Library	Purpose
 
-requests         -          	To make API calls to PubMed
-argparse	       -           For handling command-line arguments
-csv	             -           To save results in CSV format
-re	             -           For filtering non-academic authors based on heuristics
-xml.etree.ElementTree  -    	For parsing XML responses from PubMed API
+   1.requests         -          	To make API calls to PubMed
+   2.argparse	       -           For handling command-line arguments
+   3.csv	             -           To save results in CSV format
+   4.re	             -           For filtering non-academic authors based on heuristics
+   5.xml.etree.ElementTree  -    	For parsing XML responses from PubMed API
 3. APIs Used
 PubMed API (esearch & efetch)
 Retrieves research papers from PubMed database.
